@@ -1,0 +1,28 @@
+CS113-Git-2
+
+วิธีการใช้ Git สัปดาห์ที่ 2
+
+1.การสร้าง / แยก Branch
+    git branch <branch-name>
+    1.1 checking
+        git branch
+    1.2 switching
+        git checkout <branch-name>
+2.การ Merge Branch แบบไม่มี Conflict
+    2.1 เพิ่มfile ใน Branch
+    2.2 switching master
+        git checkout master
+    git merge <branch-name>
+    P.S Push ด้วย git push origin master
+3.การ Pull แบบไม่มี Conflict(ใช้ในการทำงานที่ใช้ User หลายคน)
+    3.1 clone git repository
+        git clone <git-url>
+    3.2 เพิ่ม/ลดเนื้อหา และ Push
+        git push origin master
+    3.4 Another User Pull
+        git pull origin master
+4. Merge & Pull แต่ติด Conflict
+P.S ต้องใช้Program ที่มีที่ช่วยจัดการ conflict เช่น Visual Studio Code สามารถเลือกว่าจะใช้ข้อมูลจาก branch ใด้
+    หากไม่มีต้องหาและแก้ไขเอง
+    4.1 เมื่อแก้ไขเสร็จให้ commit การแก้ไขนั้น
+    P.S Push ด้วย git push origin master
